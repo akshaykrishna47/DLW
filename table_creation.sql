@@ -1,14 +1,16 @@
 SHOW DATABASES;
-DROP DATABASE aaaa;
+DROP DATABASE testdata;
 DROP TABLE Schedule;
 
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
+FLUSH PRIVILEGES;
 CREATE DATABASE Data;
-USE Data;
+USE testdata;
 CREATE TABLE Schedule(
 	room_no INT,
     date_ DATE,
     time_ INT,
-    booking_status BOOL,
+    booking_status INT,
     PRIMARY KEY (room_no, date_, time_)
 );
 INSERT INTO Schedule (room_no, date_, time_, booking_status)
