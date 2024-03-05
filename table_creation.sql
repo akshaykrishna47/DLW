@@ -25,7 +25,7 @@ CREATE TABLE stations (
     device_id TEXT,
     name TEXT,
     latitude REAL,
-    longitude REAL,
+    longitude REAL
 );
 
 CREATE TABLE readings(
@@ -34,7 +34,7 @@ CREATE TABLE readings(
     timestamp TEXT,
     value REAL,
     FOREIGN KEY (station_id) REFERENCES stations(id)
-)
+);
 
 
 
