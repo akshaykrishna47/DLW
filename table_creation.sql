@@ -20,6 +20,24 @@ INSERT INTO Schedule (room_no, date_, time_, booking_status)
 
 SELECT * FROM Schedule;
 
+CREATE TABLE stations (
+    id TEXT PRIMARY KEY,
+    device_id TEXT,
+    name TEXT,
+    latitude REAL,
+    longitude REAL,
+);
+
+CREATE TABLE readings(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    station_id TEXT,
+    timestamp TEXT,
+    value REAL,
+    FOREIGN KEY (station_id) REFERENCES stations(id)
+)
+
+
+
 
 --     indoor_temperature INT,
 --     outdoor_temperature INT,
