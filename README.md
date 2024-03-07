@@ -13,8 +13,6 @@ EcoComfort wasn't built overnight. It emerged through meticulous steps:
 - Developing a Random Forest model for energy consumption prediction.
 - Creating a custom OpenAI Gym environment for simulation.
 - Implementing the core with a Deep Q Network (DQN) architecture trained via a replay memory mechanism.
-  
- [API Link for Air Temperature](https://api.data.gov.sg/v1/environment/air-temperature)
 
 *With a design centered on sustainability, EcoComfort optimizes energy consumption while dynamically adjusting settings—an intelligent solution for efficient and user-centric indoor climate control.*
 
